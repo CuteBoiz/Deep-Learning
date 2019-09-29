@@ -2,13 +2,15 @@
 <h2>1. Install Environment For Deep Learning </h1>
 
 <h3>a. Install Virtualenv </h3>
-<b>- Install </b>
+<ul>
+  <li><b>- Install </b></li>
 `pip install virtualenv`
 `sudo /usr/bin/easy_install virtualenv`
-<b>- Create Virtual Environment </b>
+  <li><b>- Create Virtual Environment </b></li>
 `virtualenv -p /usr/bin/python3 [project_name]`
-<b>- Active Virtual Environment </b>
+  <li><b>- Active Virtual Environment </b></li>
 `virtualenv [project_name]/bin/activate`
-<b>- Exit Virtual Environment </b>
+  <li><b>- Exit Virtual Environment </b></li>
 `deactivate`
+</ul>
 <h3>b. Install Keras and Tensoflow</h3>
