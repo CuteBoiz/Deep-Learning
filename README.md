@@ -4,11 +4,10 @@
 <h3>a. Install Virtualenv </h3>
 <ul>
   <li><b>- Install </b></li>
-  ```sh
   
+  ```sh 
   pip install virtualenv
   sudo /usr/bin/easy_install virtualenv
-  
   ```
   <li><b>- Create Virtual Environment </b></li>
 `virtualenv -p /usr/bin/python3 [project_name]`
