@@ -19,13 +19,17 @@
   sudo apt-get install libffi-dev
   ```
   <li><b>Install</b></li>
+  Change director
   
   `cd Python-3.7.4`
+  Now run the following command to run the configuration script:
   
   `./configure`
-  
+  Now is the time to install Python.
+
   `make` or `sudo apt-get make`
   
+  Also, run the following command for Python installation:
   `sudo make install`
   
   Check if successful: 
