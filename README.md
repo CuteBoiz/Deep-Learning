@@ -3,11 +3,10 @@
 <h3>1. Install Python</h3>
 <ul>
   <li><b>Get Lastest Python Version</b></li>
-    Go to: https://www.python.org/downloads/source/ to get the lastest version's source
-  
-    ```sh
-    wget https://www.python.org/ftp/python/3.7.4/Python-3.7.4.tgz
-    ```
+  Go to: https://www.python.org/downloads/source/ to get the lastest version's source
+  ```sh
+  wget https://www.python.org/ftp/python/3.7.4/Python-3.7.4.tgz
+  ```
   Extract the source: `tar -xvf Python-3.7.4.tgz `
   <li><b>Install Prerequiste</b></li>
   
