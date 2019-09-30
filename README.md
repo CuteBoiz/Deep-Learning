@@ -8,7 +8,7 @@
   ```sh
   wget https://www.python.org/ftp/python/3.7.4/Python-3.7.4.tgz
   ```
-  Extract the source:
+  </br>Extract the source:
   
   `tar -xvf Python-3.7.4.tgz `
   <li><b>Install Prerequiste</b></li>
@@ -22,24 +22,24 @@
   Change director
   
   `cd Python-3.7.4`
-  Now run the following command to run the configuration script:
+  </br>Now run the following command to run the configuration script:
   
   `./configure`
-  Now is the time to install Python.
+  </br>Now is the time to install Python.
 
   `make` or `sudo apt-get make`
   
-  Also, run the following command for Python installation:
+  </br>Also, run the following command for Python installation:
   `sudo make install`
   
-  Check if successful: 
+  </br>Check if successful: 
   
   `python3.7 -V`
   <li><b>Change From Current Version To Newest Version</b></li>
   If you check by
   
   `python3 -V`
-  The result still be a 3.6 python version. So we need to upgarde it to the version we just installed.
+  </br>The result still be a 3.6 python version. So we need to upgarde it to the version we just installed.
   Add python's alternatives (current version(mine was 3.6.8) and newest version (3.7.4))
   
   ```sh
@@ -47,8 +47,8 @@
   sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.7 2
   ```
   
-  Then chose <i>"2"</i>.
-  Enjoy The Result!
+  </br>Then chose <i>"2"</i>.
+  </br>Enjoy The Result!
 </ul>
 
 <h3>2.Install Virtualenv </h3>
