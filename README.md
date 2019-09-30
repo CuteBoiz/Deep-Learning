@@ -17,11 +17,11 @@
   sudo apt-get install libffi-dev
   ```
   <li><b>Install</b></li>
-  Change director: `cd Python-3.7.4`
-  </br>Now run the following command to run the configuration script: `./configure`
-  </br>Now is the time to install Python: `make` or `sudo apt-get make`
-  </br>Also, run the following command for Python installation: `sudo make install`
-  </br>Check if successful:  `python3.7 -V`
+  Change director:  `cd Python-3.7.4`
+  </br>Now run the following command to run the configuration script:  `./configure`
+  </br>Now is the time to install Python:  `make` or `sudo apt-get make`
+  </br>Also, run the following command for Python installation:  `sudo make install`
+  </br>Check if successful:   `python3.7 -V`
   <li><b>Change From Current Version To Newest Version</b></li>
   If you check by: `python3 -V`
   </br>The result still be a 3.6 python version. So we need to upgarde it to the version we just installed.
@@ -31,7 +31,7 @@
   sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.6 1
   sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.7 2
   ```
-  </br>Then chose <i>"2"</i>.
+  Then chose <i>"2"</i>.
   </br><b>Enjoy The Result!</b>
 </ul>
 
