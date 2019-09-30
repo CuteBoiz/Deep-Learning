@@ -18,6 +18,7 @@
   ```
   <li><b>Install</b></li>
   Change director:
+  
   `cd Python-3.7.4 `
   </br>Now run the following command to run the configuration script:
   `./configure `
