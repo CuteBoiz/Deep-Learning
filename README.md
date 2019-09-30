@@ -1,7 +1,53 @@
 # Deep-Learning With Keras And TensorFlow
-<h2>1.Install Environment For Deep Learning </h1>
+<h2>I.Install Environment For Deep Learning </h2>
+<h3>1. Install Python</h3>
+<ul>
+  <li><b>Get Lastest Python Version</b></li>
+  Go to: https://www.python.org/downloads/source/
+  
+  ```sh
+  wget https://www.python.org/ftp/python/3.7.4/Python-3.7.4.tgz
+  ```
+  Extract the source:
+  
+  `tar -xvf Python-3.7.4.tgz `
+  <li><b>Install Prerequiste</b></li>
+  
+  ```sh
+  sudo apt-get install gcc
+  sudo apt install zlib1g-dev 
+  sudo apt-get install libffi-dev
+  ```
+  <li><b>Install</b></li>
+  
+  `cd Python-3.7.4`
+  
+  `./configure`
+  
+  `make` or `sudo apt-get make`
+  
+  `sudo make install`
+  
+  Check if successful: 
+  
+  `python3.7 -V`
+  <li><b>Change From Current Version To Newest Version</b></li>
+  If you check by
+  
+  `python3 -V`
+  The result still be a 3.6 python version. So we need to upgarde it to the version we just installed.
+  Add python's alternatives (current version(mine was 3.6.8) and newest version (3.7.4))
+  
+  ```sh
+  sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.6 1
+  sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.7 2
+  ```
+  
+  Then chose <i>"2"</i>.
+  Enjoy The Result!
+</ul>
 
-<h3>a.Install Virtualenv </h3>
+<h3>2.Install Virtualenv </h3>
 <ul>
   <li><b>Install </b></li>
   
@@ -13,7 +59,7 @@
 `virtualenv -p /usr/bin/python3 [project_name]`
   <li><b>Active Virtual Environment </b></li>
   
-`virtualenv [project_name]/bin/activate`
+`source [project_name]/bin/activate`
   <li><b>Exit Virtual Environment </b></li>
   
 `deactivate`
