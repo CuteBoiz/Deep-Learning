@@ -1,4 +1,4 @@
-# Deep-Learning With Keras And TensorFlow
+# Deep-Learning With Keras And TensorFlow On Ubuntu Mate
 <h2>I.Install Environment For Deep Learning </h2>
 <h3>1. Install Python</h3>
 <ul>
@@ -30,13 +30,12 @@
   $ sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.6 1
   $ sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.7 2
   $ sudo update-alternatives --config python3
-  2
+  $ 2
   ```
-  
   </br><b>Enjoy The Result!</b>
 </ul>
 
-<h3>2.Install Virtualenv </h3>
+<h3>2. Setup Virtual Programming Environment for Python3 </h3>
 <ul>
   <li><b>Install Prerequistes</b></li>
   
@@ -62,4 +61,30 @@
   $ deactivate
   ```
 </ul>
-<h3>b.Install Keras and Tensoflow</h3>
+<h3>3. Install Keras and Tensoflow</h3>
+
+```sh
+$ pip install tensorflow
+$ pip install keras
+```
+
+```sh
+$ pip show tensorflow
+$ pip show keras 
+```
+
+<h3>4. Install Jupyter NoteBook</h3>
+
+```sh
+$ pip install jupyter notebook
+$ jupyter notebook
+```
+Then open your web browser at: http://localhost:8888/
+
+
+
+
+
+
+
+
