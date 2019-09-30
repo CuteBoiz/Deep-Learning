@@ -21,16 +21,12 @@
   
   `cd Python-3.7.4 `
   </br>Now run the following command to run the configuration script:
-  
   `./configure `
   </br>Now is the time to install Python:
-  
   `make ` or `sudo apt-get make `
   </br>Also, run the following command for Python installation:
-  
   `sudo make install `
   </br>Check if successful:
-  
   `python3.7 -V `
   <li><b>Change From Current Version To Newest Version</b></li>
   If you check the version by:
