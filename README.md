@@ -6,30 +6,30 @@
   Go to: https://www.python.org/downloads/source/ to get the lastest version's source
   
   ```sh
-  wget https://www.python.org/ftp/python/3.7.4/Python-3.7.4.tgz
+  $ wget https://www.python.org/ftp/python/3.7.4/Python-3.7.4.tgz
   ```
-  Extract the source: `tar -xvf Python-3.7.4.tgz `
-  <li><b>Install Prerequiste</b></li>
+  Extract the source: `$ tar -xvf Python-3.7.4.tgz `
+  <li><b>Install Prerequistes</b></li>
   
   ```sh
-  sudo apt-get install gcc
-  sudo apt install zlib1g-dev 
-  sudo apt-get install libffi-dev
+  $ sudo apt-get install gcc
+  $ sudo apt install zlib1g-dev 
+  $ sudo apt-get install libffi-dev libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev
   ```
   <li><b>Install</b></li>
   
   ```sh
-  cd Python-3.7.4
-  ./configure
-  make 
-  sudo make install
-  python3.7 -V
+  $ cd Python-3.7.4
+  $ ./configure
+  $ sudo make && make install
+  $ python3.7 -V
   ```
   <li><b>Change From Current Version To Newest Version</b></li>
 
   ```sh
-  sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.6 1
-  sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.7 2
+  $ sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.6 1
+  $ sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.7 2
+  $ sudo update-alternatives --config python3
   2
   ```
   
@@ -38,19 +38,28 @@
 
 <h3>2.Install Virtualenv </h3>
 <ul>
-  <li><b>Install </b></li>
+  <li><b>Install Prerequistes</b></li>
   
-  `pip install virtualenv` 
+  ```sh
+  $ sudo apt-get install build-essential libssl-dev libffi-dev python-dev
+  $ sudo apt-get update
+  $ sudo apt install python3-pip
+  $ sudo apt install -y python3-venv
+  ```
+  <li><b>Create Virtual Environment Thourgh Python3-venv</b></li>
   
-  `sudo /usr/bin/easy_install virtualenv`
-  <li><b>Create Virtual Environment </b></li>
+  ```sh
+  $ python3 -m venv [project_name]
+  ```
+  <li><b> Activate the Python Virtual Environment</b></li>
   
-`virtualenv -p /usr/bin/python3 [project_name]`
-  <li><b>Active Virtual Environment </b></li>
-  
-`source [project_name]/bin/activate`
+  ```sh
+  $ source [project_name]/bin/activate
+  ```
   <li><b>Exit Virtual Environment </b></li>
   
-`deactivate`
+  ```sh
+  $ deactivate
+  ```
 </ul>
 <h3>b.Install Keras and Tensoflow</h3>
