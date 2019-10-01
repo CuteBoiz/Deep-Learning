@@ -42,6 +42,7 @@
   ```sh
   $ sudo apt-get install build-essential libssl-dev libffi-dev python-dev
   $ sudo apt-get update
+  $ sudo pip3 install --upgrade pip 
   $ sudo apt install python3-pip
   $ sudo apt install -y python3-venv
   ```
@@ -61,7 +62,16 @@
   $ deactivate
   ```
 </ul>
-<h3>3. Install Keras and Tensoflow</h3>
+<h3>3. Install Anaconda</h3>
+
+```sh
+$ wget https://repo.anaconda.com/archive/Anaconda3-2019.07-Linux-x86_64.sh
+$ sha256sum Anaconda3-2019.03-Linux-x86_64.sh
+$ bash Anaconda3-2019.03-Linux-x86_64.sh
+$ conda create --name my_env python=3
+$ conda activate my_env
+```
+<h3>4. Install Keras and Tensoflow</h3>
 
 ```sh
 $ pip install tensorflow
@@ -73,7 +83,7 @@ $ pip show tensorflow
 $ pip show keras 
 ```
 
-<h3>4. Install Jupyter NoteBook</h3>
+<h3>5. Install Jupyter NoteBook</h3>
 
 ```sh
 $ pip install jupyter notebook
