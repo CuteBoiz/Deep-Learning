@@ -2,7 +2,7 @@
 
 ### I. CUDA & CUDA Toolkit.
 
-#### Verify the system has a CUDA-capable GPU.  
+***Verify the system has a CUDA-capable GPU.***  
 
 ```sh 
 lspci | grep -i nvidia
@@ -11,7 +11,7 @@ lspci | grep -i nvidia
 
 - If your GPU is from NVIDA and listed in https://developer.nvidia.com/cuda-gpus, your GPU is CUDA-capable.
 
-#### Download the NVIDA CUDA Toolkit: 
+***Download the NVIDA CUDA Toolkit:*** 
 
 - Go to [NVIDIA CUDA Download Page](https://developer.nvidia.com/cuda-downloads).
 - Choose your corresponding OS.
@@ -20,7 +20,7 @@ lspci | grep -i nvidia
 
 ### II. cuDNN SDK.
 
-### Download:
+***Download:***
 
 - Go to [NVIDIA cuDNN home page](https://developer.nvidia.com/cudnn)
 - Click **Download**
@@ -29,13 +29,13 @@ lspci | grep -i nvidia
 - Download 3 **.deb** files for Ubuntu.
 
 
-#### Install:
+***Install:***
 
 - Install the runtime library, for example: `sudo dpkg -i libcudnn8_x.x.x-1+cudax.x_amd64.deb`
 - Install the developer library, for example: `sudo dpkg -i libcudnn8-dev_8.x.x.x-1+cudax.x_amd64.deb`
 - Install the code samples and the cuDNN library documentation, for example: `sudo dpkg -i libcudnn8-doc_8.x.x.x-1+cudax.x_amd64.deb`
 
-#### Verify cuDNN Install:
+***Verify cuDNN Install:***
 
 To verify that cuDNN is installed and is running properly, compile the `mnistCUDNN` sample located in the `/usr/src/cudnn_samples_v8` directory in the Debian file.
 
@@ -53,14 +53,14 @@ Test passed!
 
 ### III. TensorRT.
 
-#### Download:
+***Download:***
 - Go to: [TensorRT Page](https://developer.nvidia.com/tensorrt).
 - Click Download Now.
 - Select the version of TensorRT that you are interested in.
 - Select the check-box to agree to the license terms.
 - Download **.deb** file 
 
-#### Install: 
+***Install:*** 
 
 Install TensorRT from the Debian local repo package:
 ```sh
