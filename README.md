@@ -1,8 +1,5 @@
 # Deep-Learning With Keras And TensorFlow On Ubuntu
 
-## A. Install TensorFlow-GPU.
-
-
 ## I. CUDA & CUDA Toolkit.
 
 ### Verify the system has a CUDA-capable GPU.  
