@@ -1,6 +1,43 @@
 # Deep-Learning With Keras And TensorFlow On Ubuntu
 
-### I. CUDA & CUDA Toolkit.
+## Table of Content
+
+[NVIDIA GPU Driver](https://github.com/CuteBoiz/)
+[CUDA Toolkit](https://github.com/CuteBoiz/)
+[cuDNN SDK](https://github.com/CuteBoiz/)
+[TensorRT](https://github.com/CuteBoiz/)
+[Tensorflow + Keras](https://github.com/CuteBoiz/)
+
+
+## I. NVIDIA GPU Drivers.
+
+***Check NVIDIA Driver Installed:***
+Use `nvidia-smi` to check NVIDIA driver. If your system installed NVIDIA driver, it will look similar to this:
+```sh
+Sun Aug 16 12:34:19 2020       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 450.51.06    Driver Version: 450.51.06    CUDA Version: 11.0     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  GeForce GTX 950     On   | 00000000:01:00.0  On |                  N/A |
+| 35%   38C    P8    11W /  75W |    330MiB /  1999MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+```                                                                             
+If your system installed NVIDIA driver you **must** skip the NVIDIA GPU Driver Install step. Or it will **conflict**.
+
+***Download & Install:***
+**MAKE SURE THAT YOUR SYSTEM HAVEN'T INSTALL NVIDIA DRIVER YET**
+- Go to [NVIDIA Download Drivers](https://www.nvidia.com/download/index.aspx?lang=en-us)
+- Choose the corresponding OS
+- Chose the corresponding GPU
+- **Download**
+- run file `./NVIDIA-Linux-x86_64-4xx.xx.run
+
+## II. CUDA Toolkit.
 
 ***Verify the system has a CUDA-capable GPU.***  
 
@@ -18,7 +55,7 @@ lspci | grep -i nvidia
 - Download the deb(local).
 - Follow the follwing step below.
 
-### II. cuDNN SDK.
+## III. cuDNN SDK.
 
 ***Download:***
 
@@ -51,7 +88,7 @@ Output:
 Test passed!
 ```
 
-### III. TensorRT.
+## IV. TensorRT.
 
 ***Download:***
 - Go to: [TensorRT Page](https://developer.nvidia.com/tensorrt).
@@ -79,7 +116,7 @@ sudo apt-get install python3-libnvinfer-dev
 sudo apt-get install uff-converter-tf
 ```
 
-### IV. Tensorflow with GPU support. 
+## V. Tensorflow with GPU support. 
 
 ```sh
 pip install tensorflow-gpu
