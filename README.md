@@ -15,32 +15,29 @@ lspci | grep -i nvidia
 - If your GPU is from NVIDA and listed in https://developer.nvidia.com/cuda-gpus, your GPU is CUDA-capable.
 
 ### Download the NVIDA CUDA Toolkit: 
-```sh
-Link : "https://developer.nvidia.com/cuda-downloads"
-Choose your corresponding OS
-Then choose the deb(local) to see the installing step.
-``` 
+
+- Go to [NVIDIA CUDA Download Page](https://developer.nvidia.com/cuda-downloads).
+- Choose your corresponding OS.
+- Download the deb(local).
+- Follow the follwing step below.
 
 ## II. cuDNN SDK.
 
 ### Download:
 
-1. Go to [NVIDIA cuDNN home page](https://developer.nvidia.com/cudnn)
-2. Click **Download**
-3. Complete short survey and click **Submit**
-4. Accept the Terms and Conditions.
-5. Download 3 **.deb** files for Ubuntu.
+- Go to [NVIDIA cuDNN home page](https://developer.nvidia.com/cudnn)
+- Click **Download**
+- Complete short survey and click **Submit**
+- Accept the Terms and Conditions.
+- Download 3 **.deb** files for Ubuntu.
 
 
 ### Install:
 
-1. Navigate to your `<cudnnpath>`.
-2. Install the runtime library, for example:
-`sudo dpkg -i libcudnn8_x.x.x-1+cudax.x_amd64.deb`
-3. Install the developer library, for example:
-`sudo dpkg -i libcudnn8-dev_8.x.x.x-1+cudax.x_amd64.deb`
-4. Install the code samples and the cuDNN library documentation, for example:
-`sudo dpkg -i libcudnn8-doc_8.x.x.x-1+cudax.x_amd64.deb`
+- Navigate to your `<cudnnpath>`.
+- Install the runtime library, for example: `sudo dpkg -i libcudnn8_x.x.x-1+cudax.x_amd64.deb`
+- Install the developer library, for example: `sudo dpkg -i libcudnn8-dev_8.x.x.x-1+cudax.x_amd64.deb`
+- Install the code samples and the cuDNN library documentation, for example: `sudo dpkg -i libcudnn8-doc_8.x.x.x-1+cudax.x_amd64.deb`
 
 ### Verify cuDNN Install:
 
@@ -61,14 +58,15 @@ Test passed!
 ## III. TensorRT.
 
 ### Download:
-1. Go to: [TensorRT Page](https://developer.nvidia.com/tensorrt).
-2. Click Download Now.
-3. Select the version of TensorRT that you are interested in.
-4. Select the check-box to agree to the license terms.
-5. Click the package you want to install. Your download begins.
+- Go to: [TensorRT Page](https://developer.nvidia.com/tensorrt).
+- Click Download Now.
+- Select the version of TensorRT that you are interested in.
+- Select the check-box to agree to the license terms.
+- Download **.deb** file 
 
 ### Install: 
-1. Install TensorRT from the Debian local repo package:
+
+Install TensorRT from the Debian local repo package:
 ```sh
 os="ubuntuxx04"
 tag="cudax.x-trt7.x.x.x-ga-yyyymmdd"
