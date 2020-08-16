@@ -2,11 +2,11 @@
 
 ## Table of Content
 
-[NVIDIA GPU Driver](https://github.com/CuteBoiz/)
-[CUDA Toolkit](https://github.com/CuteBoiz/)
-[cuDNN SDK](https://github.com/CuteBoiz/)
-[TensorRT](https://github.com/CuteBoiz/)
-[Tensorflow + Keras](https://github.com/CuteBoiz/)
+- [NVIDIA GPU Driver](https://github.com/CuteBoiz/)
+- [CUDA Toolkit](https://github.com/CuteBoiz/)
+- [cuDNN SDK](https://github.com/CuteBoiz/)
+- [TensorRT](https://github.com/CuteBoiz/)
+- [Tensorflow + Keras](https://github.com/CuteBoiz/)
 
 
 ## I. NVIDIA GPU Drivers.
@@ -29,11 +29,11 @@ Sun Aug 16 12:34:19 2020
 ```                                                                             
 If your system installed NVIDIA driver you **must** skip the NVIDIA GPU Driver Install step. Or it will **conflict**.
 
-***Download & Install:***
+***Download & Install:***  
 **MAKE SURE THAT YOUR SYSTEM HAVEN'T INSTALL NVIDIA DRIVER YET**
+
 - Go to [NVIDIA Download Drivers](https://www.nvidia.com/download/index.aspx?lang=en-us)
-- Choose the corresponding OS
-- Chose the corresponding GPU
+- Choose the corresponding OS & GPU
 - **Download**
 - run file `./NVIDIA-Linux-x86_64-4xx.xx.run
 
@@ -120,6 +120,7 @@ sudo apt-get install uff-converter-tf
 
 ```sh
 pip install tensorflow-gpu
+pip install keras
 ```
 
 
