@@ -1,95 +1,87 @@
-# Deep-Learning With Keras And TensorFlow On Ubuntu Mate
-<h2>I.Install Environment For Deep Learning </h2>
-<h3>1. Install Python</h3>
-<ul>
-  <li><b>Get Lastest Python Version </b></li>
-  Go to: https://www.python.org/downloads/source/ to get the lastest version's source
-  
-  ```sh
-  $ wget https://www.python.org/ftp/python/3.7.4/Python-3.7.4.tgz
-  ```
-  Extract the source: `$ tar -xvf Python-3.7.4.tgz `
-  <li><b>Install Prerequistes</b></li>
-  
-  ```sh
-  $ sudo apt-get install gcc
-  $ sudo apt install zlib1g-dev 
-  $ sudo apt-get install libffi-dev libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev
-  ```
-  <li><b>Install</b></li>
-  
-  ```sh
-  $ cd Python-3.7.4
-  $ ./configure
-  $ sudo make && make install
-  $ python3.7 -V
-  ```
-  <li><b>Change From Current Version To Newest Version</b></li>
+# Deep-Learning With Keras And TensorFlow On Ubuntu
 
-  ```sh
-  $ sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.6 1
-  $ sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.7 2
-  $ sudo update-alternatives --config python3
-  $ 2
-  ```
-  </br><b>Enjoy The Result!</b>
-</ul>
+## A. Install TensorFlow-GPU.
 
-<h3>2. Setup Virtual Programming Environment for Python3 </h3>
-<ul>
-  <li><b>Install Prerequistes</b></li>
-  
-  ```sh
-  $ sudo apt-get install build-essential libssl-dev libffi-dev python-dev
-  $ sudo apt-get update
-  $ sudo pip3 install --upgrade pip 
-  $ sudo apt install python3-pip
-  $ sudo apt install -y python3-venv
-  ```
-  <li><b>Create Virtual Environment Thourgh Python3-venv</b></li>
-  
-  ```sh
-  $ python3 -m venv [project_name]
-  ```
-  <li><b> Activate the Python Virtual Environment</b></li>
-  
-  ```sh
-  $ source [project_name]/bin/activate
-  ```
-  <li><b>Exit Virtual Environment </b></li>
-  
-  ```sh
-  $ deactivate
-  ```
-</ul>
-<h3>3. Install Anaconda</h3>
 
-```sh
-$ wget https://repo.anaconda.com/archive/Anaconda3-2019.07-Linux-x86_64.sh
-$ sha256sum Anaconda3-2019.03-Linux-x86_64.sh
-$ bash Anaconda3-2019.03-Linux-x86_64.sh
-$ conda create --name my_env python=3
-$ conda activate my_env
+## I. CUDA & CUDA Toolkit.
+
+- Verify the system has a CUDA-capable GPU.  
+
+```sh 
+lspci | grep -i nvidia
 ```
-<h3>4. Install Keras and Tensoflow</h3>
+	- If you do not see any settings, update the PCI hardware `update-pciids` then return the previous command.
 
+	- If your GPU is from NVIDA and listed in https://developer.nvidia.com/cuda-gpus, your GPU is CUDA-capable.
+
+- Download the NVIDA CUDA Toolkit: 
 ```sh
-$ pip install tensorflow
-$ pip install keras
+Link : "https://developer.nvidia.com/cuda-downloads"
+Choose your corresponding OS
+Then choose the deb(local) to see the installing step.
+``` 
+
+## II. cuDNN SDK.
+
+### Download:
+```sh
+1. Go to [NVIDIA cuDNN home page](https://developer.nvidia.com/cudnn)
+2. Click "Download"
+3. Complete short survey and click "Submit"
+4. Accept the Terms and Conditions. A list of available download versions of cuDNN displays.
+5. Choose ".deb" files for ubuntu (3 files)
 ```
 
+### Install:
+
+1. Navigate to your `<cudnnpath>`.
+2. Install the runtime library, for example:
+```sh 
+sudo dpkg -i libcudnn8_x.x.x-1+cudax.x_amd64.deb
+
+```
+3. Install the developer library, for example:
+```sh 
+sudo dpkg -i libcudnn8-dev_8.x.x.x-1+cudax.x_amd64.deb
+
+```
+4. Install the code samples and the cuDNN library documentation, for example:
 ```sh
-$ pip show tensorflow
-$ pip show keras 
+sudo dpkg -i libcudnn8-doc_8.x.x.x-1+cudax.x_amd64.deb
+
 ```
 
-<h3>5. Install Jupyter NoteBook</h3>
+### Verify cuDNN Install:
+
+To verify that cuDNN is installed and is running properly, compile the `mnistCUDNN` sample located in the `/usr/src/cudnn_samples_v8` directory in the Debian file.
 
 ```sh
-$ pip install jupyter notebook
-$ jupyter notebook
+cp -r /usr/src/cudnn_samples_v8/ $HOME
+cd  $HOME/cudnn_samples_v8/mnistCUDNN
+make clean && make
+./mnistCUDNN
+
 ```
-Then open your web browser at: http://localhost:8888/
+Output:
+```sh 
+Test passed!
+```
+
+## III. TensorRT.
+
+### Download:
+1. Go to: https://developer.nvidia.com/tensorrt.
+2. Click Download Now.
+3. Select the version of TensorRT that you are interested in.
+4. Select the check-box to agree to the license terms.
+5. Click the package you want to install. Your download begins.
+
+### Install: 
+
+
+## IV. Tensorflow with GPU support. 
+
+
 
 
 
