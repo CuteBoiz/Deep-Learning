@@ -20,7 +20,7 @@ $$
 price = w_{diện_tích}.diện_tích+w_{tuổi_đời}.tuổi_đời + b
 $$
 
-Ở đây,  $ w_{diện_tích} $ và $ w_{tuổi_đời} $ được gọi là các trọng số, và  b  được gọi là hệ số điều chỉnh (còn được gọi là độ dời).
+Ở đây, $ w_{diện_tích} $ và $ w_{tuổi_đời} $ được gọi là các trọng số, và  b  được gọi là hệ số điều chỉnh (còn được gọi là độ dời).
 
 $$
 \hat{y}=Xw+b.\
