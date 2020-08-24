@@ -16,9 +16,7 @@
 
 Giả định tuyến tính trên cho thấy rằng mục tiêu (giá nhà) có thể được biểu diễn bởi tổng có trọng số của các đặc trưng (diện tích và tuổi đời):
 
-$$
-price = w_{diện_tích}.diện_tích+w_{tuổi_đời}.tuổi_đời + b
-$$
+<img src="https://latex.codecogs.com/gif.latex?price&space;=&space;w_{diện_tích}.diện_tích&plus;w_{tuổi_đời}.tuổi_đời&space;&plus;&space;b" title="price = w_{diện_tích}.diện_tích+w_{tuổi_đời}.tuổi_đời + b" />
 
 Ở đây, $ w_{diện_tích} $ và $ w_{tuổi_đời} $ được gọi là các trọng số, và  b  được gọi là hệ số điều chỉnh (còn được gọi là độ dời).
 
