@@ -1,14 +1,14 @@
 
 ## Table of Content. 
 - [I. Các thành phần cơ bản của Linear Regression]()
-	- 1. [Mô hình tuyến tính.]()
-	- 2. [Hàm mất mát.]()
-	- 3. [Nghiệm theo công thức.]()
-	- 4. [Hạ Gradient.]()
-	- 5. [Dự đoán bằng mô hình đã huấn luyện.]()
-	- 6. [Vector hóa để tăng tốc độ tình toán.]()
+	- [Mô hình tuyến tính.]()
+	- [Hàm mất mát.]()
+	- [Nghiệm theo công thức.]()
+	- [Hạ Gradient.]()
+	- [Dự đoán bằng mô hình đã huấn luyện.]()
+	- [Vector hóa để tăng tốc độ tình toán.]()
 - [II. Phân phối chuẩn và Hàm mất mát bình phương.]()
-- [III. Từ Hồi quy tuyến tính tới mạng học sâu]
+- [III. Từ Hồi quy tuyến tính tới mạng học sâu]()
 
 ## I. Các thành phần cơ bản của Linear Regression
 
@@ -16,14 +16,14 @@
 
 Giả định tuyến tính trên cho thấy rằng mục tiêu (giá nhà) có thể được biểu diễn bởi tổng có trọng số của các đặc trưng (diện tích và tuổi đời):
 
-$$ 
-price = w_{diện_tích}.diện_tích + w_{tuổi_đời}.tuổi_đời + b 
+$$
+price = w_{diện_tích}.diện_tích+w_{tuổi_đời}.tuổi_đời + b
 $$
 
 Ở đây,  $ w_{diện_tích} $ và $ w_{tuổi_đời} $ được gọi là các trọng số, và  b  được gọi là hệ số điều chỉnh (còn được gọi là độ dời).
 
 $$
- \hat{y}=Xw+b.\
+\hat{y}=Xw+b.\
 $$
 
 ### 2. Hàm mất mát.
