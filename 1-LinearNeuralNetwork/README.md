@@ -20,9 +20,7 @@ Giả định tuyến tính trên cho thấy rằng mục tiêu (giá nhà) có 
 
 Ở đây, $ w_{diện_tích} $ và $ w_{tuổi_đời} $ được gọi là các trọng số, và  b  được gọi là hệ số điều chỉnh (còn được gọi là độ dời).
 
-$$
-\hat{y}=Xw+b.\
-$$
+<img src="https://latex.codecogs.com/gif.latex?L(w,&space;b)&space;=&space;\frac{1}{2}(&space;\hat{y}^{(i)}-y^{(i)})^{2}" title="L(w, b) = \frac{1}{2}( \hat{y}^{(i)}-y^{(i)})^{2}" />
 
 ### 2. Hàm mất mát.
 
