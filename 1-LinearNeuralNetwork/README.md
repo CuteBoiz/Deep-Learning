@@ -16,36 +16,32 @@
 
 Giả định tuyến tính trên cho thấy rằng mục tiêu (giá nhà) có thể được biểu diễn bởi tổng có trọng số của các đặc trưng (diện tích và tuổi đời):
 
-<img src="https://latex.codecogs.com/gif.latex?price&space;=&space;w_{diện_tích}.diện_tích&plus;w_{tuổi_đời}.tuổi_đời&space;&plus;&space;b" title="price = w_{diện_tích}.diện_tích+w_{tuổi_đời}.tuổi_đời + b" />
+<img src="https://latex.codecogs.com/gif.latex?price&space;=&space;w_{S}.S&space;&plus;&space;w_{age}.age&space;&plus;&space;b" title="price = w_{S}.S + w_{age}.age + b" />
 
-Ở đây, $ w_{diện_tích} $ và $ w_{tuổi_đời} $ được gọi là các trọng số, và  b  được gọi là hệ số điều chỉnh (còn được gọi là độ dời).
+Ở đây,  w<sub>S</sub> và w<sub>age</sub> được gọi là các trọng số, và b được gọi là hệ số điều chỉnh (còn được gọi là độ dời).
 
 <img src="https://latex.codecogs.com/gif.latex?L(w,&space;b)&space;=&space;\frac{1}{2}(&space;\hat{y}^{(i)}-y^{(i)})^{2}" title="L(w, b) = \frac{1}{2}( \hat{y}^{(i)}-y^{(i)})^{2}" />
 
 ### 2. Hàm mất mát.
 
-$$
-L(w, b) = \frac{1}{2}( \hat{y}^{(i)}-y^{(i)})^{2} 
-$$
+<img src="https://latex.codecogs.com/gif.latex?L(w,&space;b)&space;=&space;\frac{1}{2}(&space;\hat{y}^{(i)}-y^{(i)})^{2}" title="L(w, b) = \frac{1}{2}( \hat{y}^{(i)}-y^{(i)})^{2}" />
 
 ### 3. Nghiệm theo công thức
 
-$$ 
-w^{*}=(X^{T}X)^{−1}X^{T}y. 
-$$
+<img src="https://latex.codecogs.com/gif.latex?w^{*}=(X^{T}X)^{-1}X^{T}y." title="w^{*}=(X^{T}X)^{-1}X^{T}y." />
 
 Tuy những bài toán đơn giản như hồi quy tuyến tính có thể có nghiệm theo công thức, bạn không nên làm quen với sự may mắn này. Mặc dù các nghiệm theo công thức giúp ta phân tích toán học một cách thuận tiện, các điều kiện để có được nghiệm này chặt chẽ đến nỗi không có phương pháp học sâu nào thoả mãn được.
 
 ### 4. Hạ Gradient.
 
-$$
-(w,b) \leftarrow (w,b)−\frac{\eta}{\|\beta\|}\sum_{i \in \beta}\partial_{(w,b)}l^{(i)}(w,b) 
-$$
+<img src="https://latex.codecogs.com/gif.latex?(w,b)&space;\leftarrow&space;(w,b)&space;-&space;\frac{\eta}{\mid&space;\beta\mid}\sum_{i&space;\in&space;\beta}\partial_{(w,b)}l^{(i)}(w,b)" title="(w,b) \leftarrow (w,b) - \frac{\eta}{\mid \beta\mid}\sum_{i \in \beta}\partial_{(w,b)}l^{(i)}(w,b)" />
 
 
 ### 5. Dự đoán bằng mô hình đã huấn luyện.
 
-Với mô hình hồi quy tuyến tính đã được huấn luyện $ \hat{w^{T}}x+\hat{b} $, ta có thể ước lượng giá của một căn nhà mới (ngoài bộ dữ liệu dùng để huấn luyện) với diện tích  x1 và tuổi đời x2 của nó. Việc ước lượng mục tiêu khi biết trước những đặc trưng thường được gọi là dự đoán hay suy luận (inference).
+Với mô hình hồi quy tuyến tính đã được huấn luyện:
+<img src="https://latex.codecogs.com/gif.latex?\hat{w^{T}}x&plus;\hat{b}" title="\hat{w^{T}}x+\hat{b}" />
+Ta có thể ước lượng giá của một căn nhà mới (ngoài bộ dữ liệu dùng để huấn luyện) với diện tích  x1 và tuổi đời x2 của nó. Việc ước lượng mục tiêu khi biết trước những đặc trưng thường được gọi là dự đoán hay suy luận (inference).
 
 ### 6. Vector hóa để tăng tốc độ tình toán.
 
